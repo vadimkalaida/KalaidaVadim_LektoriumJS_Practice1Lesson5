@@ -1,0 +1,74 @@
+.menu {
+	width: 300px;
+	min-height: 400px;
+	position: absolute;
+	top: 10px;
+	left: -300px;
+	background: #66DDAA;
+	border: 2px solid #1E9562;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transition: .2s
+}
+
+.menu.active {
+	left: 10px;
+	top: 10px;
+}
+
+.menu h1 {
+	color: #006936;
+	font-size: 36px;
+	margin-bottom: 55px;
+}
+
+.menu_nav {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.menu_nav a {
+	margin-bottom: 15px;
+	font-size: 26px;
+	color: #006936;
+	transition: .2s;
+}
+
+.menu_nav a:hover {
+	color: #004E1B;
+}
+
+.openbtn {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #004E1B;
+	font-size: 28px;
+	border: 2px solid #004E1B;
+	border-radius: 10px;
+	left: 10px;
+	top: 10px;
+	transition: .2s;
+}
+
+.openbtn:hover {
+	border: 2px solid #006936;
+	color: #006936;
+}
+
+.openbtn.active {
+	border: 2px solid #7E0000;
+	left: 320px;
+	color: #7E0000;
+}
+
+.openbtn.active:hover {
+	color: #ff0000;
+	border: 2px solid red;
+}
